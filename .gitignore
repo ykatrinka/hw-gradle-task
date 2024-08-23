@@ -1,3 +1,5 @@
 /.gradle/
 /.idea/
+/build/
 gradle-task.iml
+/gradle-task-core.iml

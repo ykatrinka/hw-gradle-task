@@ -1,2 +1,4 @@
 rootProject.name = 'gradle-task'
 
+include 'gradle-task-core'
+

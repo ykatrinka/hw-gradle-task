@@ -2,12 +2,11 @@ plugins {
     id 'java'
 }
 
+apply from: "$rootProject.rootDir/dependencies.gradle"
+
 group 'ru.clevertec'
-version '1.0-SNAPSHOT'
+version '1.3.5'
 
 repositories {
     mavenCentral()
-}
-
-dependencies {
 }
