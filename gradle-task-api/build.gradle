@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'ru.clevertec'
+version '1.3.5'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':gradle-task-core')
+}
+
+test {
+    useJUnitPlatform()
+}

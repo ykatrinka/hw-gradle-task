@@ -3,3 +3,4 @@
 /build/
 gradle-task.iml
 /gradle-task-core.iml
+/gradle-task-api.iml
