@@ -1,11 +1,27 @@
 plugins {
     id 'java-gradle-plugin'
+    id 'com.gradle.plugin-publish' version '1.2.1'
 }
+
+group = 'ru.clevertec.edu.ykv'
+version = '1.3.5'
 
 gradlePlugin {
     plugins {
         jacocoPlugin {
             id = 'customJacoco'
+            implementationClass = 'ru.clevertec.edu.ykv.CustomJacocoPlugin'
+        }
+    }
+
+    website = 'https://github.com/ykatrinka/customJacocoPlugin'
+    vcsUrl = 'https://github.com/ykatrinka/customJacocoPlugin.git'
+    plugins {
+        gradletestPlugin {
+            id = 'ru.clevertec.ykatrinka.customjacoco'
+            displayName = 'Plugin for create covered report Jacoco for all moduls'
+            description = 'A plugin that ctreate covered test report '
+            tags.addAll('reporting', 'customJacoco', 'compatibility')
             implementationClass = 'ru.clevertec.edu.ykv.CustomJacocoPlugin'
         }
     }
